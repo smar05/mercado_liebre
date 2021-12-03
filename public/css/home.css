@@ -9,6 +9,7 @@ header {
   padding: 15px;
   background-color: #eac926;
   margin: 0;
+  border-radius: 5px;
 }
 
 header .logo {
@@ -29,6 +30,7 @@ header .menu-opciones {
 
 header .menu-opciones ul {
   list-style-type: none;
+  padding: 0px;
 }
 
 header .menu-opciones ul li a {
@@ -43,6 +45,7 @@ header .menu-usuario {
 
 header .menu-usuario ul {
   list-style-type: none;
+  padding: 0px;
 }
 
 header .menu-usuario ul li a {
@@ -68,10 +71,39 @@ header .burger-menu i {
   margin: 10px 0px 20px 0px;
 }
 
+/*Contenido*/
+.card {
+  font-size: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card .card-body {
+  padding: 10px;
+}
+
+.card .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card .offer {
+  color: #39b54a;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 footer {
   background-color: white;
   text-align: center;
   padding: 10px 30px 10px 30px;
+  border-radius: 5px;
 }
 
 footer .icon {
