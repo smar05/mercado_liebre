@@ -61,10 +61,41 @@ header .burger-menu {
   font-size: 20px;
   height: 40px;
   width: 40px;
+  padding: 2px;
 }
 
-header .burger-menu .i {
+header .burger-menu i {
   margin: 10px 0px 20px 0px;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+}
+
+footer .icon {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2rem;
+  height: 40px;
+  width: 40px;
   padding: 10px;
+  color: #3483fa;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer .info {
+  font-weight: 600;
+}
+
+footer .copyright {
+  text-align: start;
+  font-size: 12px;
 }
 /*Header*/
