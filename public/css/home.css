@@ -1,7 +1,70 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  font-size: 12px;
 }
 
+/*Header*/
 header {
+  padding: 15px;
   background-color: #eac926;
+  margin: 0;
 }
+
+header .logo {
+  height: 100px;
+  width: 200px;
+}
+
+header .mensaje {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+header .menu-opciones {
+  font-size: 12px;
+  margin-left: 0px;
+}
+
+header .menu-opciones ul {
+  list-style-type: none;
+}
+
+header .menu-opciones ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .menu-usuario {
+  font-size: 12px;
+}
+
+header .menu-usuario ul {
+  list-style-type: none;
+}
+
+header .menu-usuario ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .burger-menu {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+header .burger-menu .i {
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+/*Header*/
