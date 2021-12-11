@@ -72,20 +72,44 @@ header .burger-menu i {
 }
 
 /*Contenido*/
+
+#id {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   font-size: 12px;
   margin: 10px;
   border-radius: 10px;
+  border: solid 1px #ebebeb;
   background-color: white;
 }
 
 .card .card-body {
-  padding: 10px;
+  padding: 15px;
+  border-top: solid 1px #ebebeb;
 }
 
 .card .title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.icon-truck {
+  color: #39b54a;
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-truck i {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card .price {
