@@ -123,6 +123,10 @@ header .burger-menu i {
   font-size: 16px;
 }
 
+.card .description {
+  display: none;
+}
+
 footer {
   background-color: white;
   text-align: center;
@@ -155,3 +159,21 @@ footer .copyright {
   font-size: 12px;
 }
 /*Header*/
+
+/*Media query tablets*/
+@media (min-width: 361px) {
+  .card {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .card .description {
+    display: block;
+  }
+}
+
+/*Media query desktop*/
+@media (min-width: 769px) {
+  .card .description {
+    display: block;
+  }
+}
