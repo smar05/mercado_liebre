@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;
@@ -86,6 +92,12 @@ header .burger-menu i {
   text-align: center;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .card {
   font-size: 12px;
   margin: 10px;
@@ -97,6 +109,7 @@ header .burger-menu i {
 .card .card-body {
   padding: 15px;
   border-top: solid 1px #ebebeb;
+  flex-direction: row;
 }
 
 .card .title {
@@ -104,20 +117,28 @@ header .burger-menu i {
   font-weight: bold;
 }
 
-.icon-truck {
+.card .card-body .icon-truck {
   color: #39b54a;
-  height: 2em;
-  width: 2em;
-  font-size: 2em;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
   border: solid 1px #39b54a;
   border-radius: 50%;
   display: flex;
+  position: relative;
+  top: -40px;
+  left: 250px;
   justify-content: center;
 }
 
 .icon-truck i {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.card .cost {
+  display: flex;
+  flex-direction: row;
 }
 
 .card .price {
@@ -129,6 +150,7 @@ header .burger-menu i {
   color: #39b54a;
   font-weight: bold;
   font-size: 16px;
+  margin-left: 10px;
 }
 
 .card .description {
@@ -180,8 +202,23 @@ footer .copyright {
   }
 
   /*Content*/
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .card {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 300px;
+  }
+
+  .card .card-body .icon-truck {
+    top: -40px;
+    left: 200px;
+    justify-content: center;
   }
 
   .card .description {
@@ -191,6 +228,11 @@ footer .copyright {
 
 /*Media query desktop*/
 @media (min-width: 769px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .card .description {
     display: block;
   }
