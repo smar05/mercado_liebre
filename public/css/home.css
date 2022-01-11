@@ -164,6 +164,10 @@ header .burger-menu i {
   background-color: white;
 }
 
+.card .card-image img {
+  border-radius: 5px;
+}
+
 .card .card-body {
   padding: 15px;
   border-top: solid 1px #ebebeb;
@@ -317,19 +321,10 @@ footer .copyright {
     justify-content: center;
   }
 
-  .card {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 300px;
-  }
-
   .card .card-body .icon-truck {
     top: -40px;
     left: 200px;
     justify-content: center;
-  }
-
-  .card .description {
-    display: block;
   }
 }
 
@@ -345,7 +340,21 @@ footer .copyright {
     height: 200px;
   }
 
-  .card .description {
+  /*Content*/
+  .card:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 300px;
+  }
+
+  .card:hover .description {
     display: block;
+  }
+
+  .card .card-body .icon-truck {
+    transition: transform 1000ms;
+  }
+
+  .card:hover .card-body .icon-truck {
+    transform: rotate(-90deg);
   }
 }
