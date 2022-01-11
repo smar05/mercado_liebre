@@ -196,17 +196,29 @@ footer {
   text-align: center;
   padding: 10px 30px 10px 30px;
   border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
 }
 
 footer .icon {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 2rem;
   height: 40px;
   width: 40px;
   padding: 10px;
   color: #3483fa;
+}
+
+footer .icon:hover {
+  color: #0022aa;
 }
 
 footer h3 {
@@ -219,10 +231,10 @@ footer .info {
 }
 
 footer .copyright {
+  margin: 10px;
   text-align: start;
   font-size: 12px;
 }
-/*Header*/
 
 /*Media query tablets*/
 @media (min-width: 361px) {
@@ -294,4 +306,8 @@ footer .copyright {
 
 /*Media query desktop*/
 @media (min-width: 769px) {
+  /*Footer*/
+  footer .row {
+    flex-direction: row;
+  }
 }

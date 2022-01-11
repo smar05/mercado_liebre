@@ -226,15 +226,25 @@ footer {
   border-radius: 5px;
 }
 
+footer .row {
+  display: flex;
+  flex-direction: column;
+}
+
 footer .icon {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 2rem;
   height: 40px;
   width: 40px;
   padding: 10px;
   color: #3483fa;
+}
+
+footer .icon:hover {
+  color: #0022aa;
 }
 
 footer h3 {
@@ -247,10 +257,10 @@ footer .info {
 }
 
 footer .copyright {
+  margin: 10px;
   text-align: start;
   font-size: 12px;
 }
-/*Header*/
 
 /*Media query tablets*/
 @media (min-width: 361px) {
@@ -364,5 +374,10 @@ footer .copyright {
 
   .card:hover .card-body .icon-truck {
     transform: rotate(-90deg);
+  }
+
+  /*Footer*/
+  footer .row {
+    flex-direction: row;
   }
 }

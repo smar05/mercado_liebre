@@ -266,15 +266,25 @@ footer {
   border-radius: 5px;
 }
 
+footer .row {
+  display: flex;
+  flex-direction: column;
+}
+
 footer .icon {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 10px;
   height: 40px;
   width: 40px;
   padding: 10px;
   color: #3483fa;
+}
+
+footer .icon:hover {
+  color: #0022aa;
 }
 
 footer h3 {
@@ -287,6 +297,7 @@ footer .info {
 }
 
 footer .copyright {
+  margin: 10px;
   text-align: start;
   font-size: 12px;
 }
@@ -366,4 +377,8 @@ footer .copyright {
 
 /*Media query desktop*/
 @media (min-width: 769px) {
+  /*Footer*/
+  footer .row {
+    flex-direction: row;
+  }
 }
