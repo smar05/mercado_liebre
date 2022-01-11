@@ -20,6 +20,6 @@ app.get("/login", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/login.html"));
 });
 
-app.listen(puerto, () =>
+app.listen(process.env.PORT || puerto, () =>
   console.log("Servidor corriendo en el puerto: " + puerto)
 );
