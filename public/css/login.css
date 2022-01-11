@@ -180,8 +180,13 @@ form {
   text-align: center;
 }
 
+.formulario .boton-enviar button a {
+  text-decoration: none;
+  color: white;
+}
+
 .formulario .boton-enviar button:active {
-  background-color: #69a0f3;
+  background-color: #0022aa;
 }
 
 /*footer*/

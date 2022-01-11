@@ -341,9 +341,17 @@ footer .copyright {
   }
 
   /*Content*/
+  .card {
+    transition: box-shadow 1000ms, width 1000ms;
+  }
+
   .card:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 300px;
+  }
+
+  .card .description {
+    transition: display 1000ms;
   }
 
   .card:hover .description {
