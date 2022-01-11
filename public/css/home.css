@@ -1,0 +1,383 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  font-size: 12px;
+}
+
+/*Header*/
+header {
+  padding: 15px;
+  background-color: #eac926;
+  margin: 0;
+}
+
+header .menu1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+header .logo {
+  height: 50px;
+  width: 50%;
+  flex-grow: 1;
+}
+
+header .logo img {
+  height: 50px;
+  width: 100%;
+}
+
+header .busqueda {
+  margin-left: 10px;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+header .busqueda input {
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex-grow: 2;
+  margin-right: 0px;
+  text-align: center;
+}
+
+header .busqueda input:focus {
+  outline: none;
+}
+
+header .busqueda button {
+  border: none;
+  background: white;
+  color: white;
+  color: black;
+  margin-left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 20px;
+}
+
+header .mensaje {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header .menu-opciones {
+  font-size: 12px;
+  margin-left: 0px;
+  display: none;
+}
+
+header .menu-opciones ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+header .menu-opciones ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .menu-usuario {
+  display: none;
+  font-size: 12px;
+}
+
+header .menu-usuario ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+header .menu-usuario ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .burger-menu {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+}
+
+header .burger-menu i {
+  margin: 10px 0px 20px 0px;
+}
+
+/*Contenido*/
+
+#id {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title {
+  display: flex;
+  justify-content: left;
+  margin: 20px 0px 20px 30px;
+}
+
+.section-title p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: darkgray;
+}
+
+.home-banner img {
+  width: 100%;
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  font-size: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 1px #ebebeb;
+  background-color: white;
+}
+
+.card .card-image img {
+  border-radius: 5px;
+}
+
+.card .card-body {
+  padding: 15px;
+  border-top: solid 1px #ebebeb;
+  flex-direction: row;
+}
+
+.card .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .card-body .icon-truck {
+  color: #39b54a;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  top: -40px;
+  left: 250px;
+  justify-content: center;
+}
+
+.icon-truck i {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card .cost {
+  display: flex;
+  flex-direction: row;
+}
+
+.card .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card .offer {
+  color: #39b54a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.card .description {
+  display: none;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  color: #3483fa;
+}
+
+footer .icon:hover {
+  color: #0022aa;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer .info {
+  font-weight: 600;
+}
+
+footer .copyright {
+  margin: 10px;
+  text-align: start;
+  font-size: 12px;
+}
+
+/*Media query tablets*/
+@media (min-width: 361px) {
+  /*Header*/
+
+  header .logo {
+    width: 25%;
+  }
+
+  header .busqueda {
+    width: 25%;
+    height: 30px;
+    display: flex;
+  }
+
+  header .busqueda input {
+    border: solid 1px black;
+    border-right: none;
+  }
+
+  header .busqueda button {
+    border: solid 1px black;
+    border-left: none;
+  }
+
+  header .menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .menu-usuario {
+    display: block;
+  }
+
+  header .menu-usuario ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .menu-usuario ul li {
+    margin: 5px;
+  }
+
+  header .menu-opciones {
+    display: block;
+  }
+
+  header .menu-opciones ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .menu-opciones ul li {
+    margin: 5px;
+  }
+
+  header .burger-menu {
+    display: none;
+  }
+
+  /*Content*/
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card .card-body .icon-truck {
+    top: -40px;
+    left: 200px;
+    justify-content: center;
+  }
+}
+
+/*Media query desktop*/
+@media (min-width: 769px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home-banner img {
+    width: 100%;
+    height: 200px;
+  }
+
+  /*Content*/
+  .card {
+    transition: box-shadow 1000ms, width 1000ms;
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 300px;
+  }
+
+  .card .description {
+    transition: display 1000ms;
+  }
+
+  .card:hover .description {
+    display: block;
+  }
+
+  .card .card-body .icon-truck {
+    transition: transform 1000ms;
+  }
+
+  .card:hover .card-body .icon-truck {
+    transform: rotate(-90deg);
+  }
+
+  /*Footer*/
+  footer .row {
+    flex-direction: row;
+  }
+}

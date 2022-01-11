@@ -1,0 +1,313 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  font-size: 12px;
+}
+
+.container {
+  margin: 20px;
+}
+
+/*Header*/
+header {
+  padding: 15px;
+  background-color: #eac926;
+  margin: 0;
+}
+
+header .menu1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+header .logo {
+  height: 50px;
+  width: 50%;
+  flex-grow: 1;
+}
+
+header .logo img {
+  height: 50px;
+  width: 100%;
+}
+
+header .busqueda {
+  margin-left: 10px;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+header .busqueda input {
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex-grow: 2;
+  margin-right: 0px;
+  text-align: center;
+  height: 100%;
+}
+
+header .busqueda input:focus {
+  outline: none;
+}
+
+header .busqueda button {
+  border: none;
+  background: white;
+  color: white;
+  color: black;
+  margin-left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 20px;
+  height: 100%;
+}
+
+header .mensaje {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header .menu-opciones {
+  font-size: 12px;
+  margin-left: 0px;
+  display: none;
+}
+
+header .menu-opciones ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+header .menu-opciones ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .menu-usuario {
+  display: none;
+  font-size: 12px;
+}
+
+header .menu-usuario ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+header .menu-usuario ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header .burger-menu {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+}
+
+header .burger-menu i {
+  margin: 10px 0px 20px 0px;
+}
+
+/*Contenido*/
+
+.titulo {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario input {
+  margin-bottom: 20px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formulario .boton-enviar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario .boton-enviar button {
+  border-radius: 5px;
+  height: 30px;
+  width: 50%;
+  margin-bottom: 10px;
+  background-color: #5678ef;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+}
+
+.formulario .boton-enviar button a {
+  text-decoration: none;
+  color: white;
+}
+
+.formulario .boton-enviar button:active {
+  background-color: #0022aa;
+}
+
+/*footer*/
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  color: #3483fa;
+}
+
+footer .icon:hover {
+  color: #0022aa;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer .info {
+  font-weight: 600;
+}
+
+footer .copyright {
+  margin: 10px;
+  text-align: start;
+  font-size: 12px;
+}
+
+/*Media query tablets*/
+@media (min-width: 361px) {
+  /*Header*/
+  /*Header*/
+
+  header .logo {
+    width: 25%;
+  }
+
+  header .busqueda {
+    width: 25%;
+    height: 30px;
+    display: flex;
+  }
+
+  header .busqueda input {
+    border: solid 1px black;
+    border-right: none;
+  }
+
+  header .busqueda button {
+    border: solid 1px black;
+    border-left: none;
+  }
+
+  header .menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .menu-usuario {
+    display: block;
+  }
+
+  header .menu-usuario ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .menu-usuario ul li {
+    margin: 5px;
+  }
+
+  header .menu-opciones {
+    display: block;
+  }
+
+  header .menu-opciones ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .menu-opciones ul li {
+    margin: 5px;
+  }
+
+  header .burger-menu {
+    display: none;
+  }
+
+  /*Content*/
+
+  .formulario {
+    width: 50%;
+  }
+}
+
+/*Media query desktop*/
+@media (min-width: 769px) {
+  /*Footer*/
+  footer .row {
+    flex-direction: row;
+  }
+}
