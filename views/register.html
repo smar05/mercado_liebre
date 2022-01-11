@@ -82,65 +82,78 @@
         </div>
 
         <form action="/js/register" method="post">
-          <div class="col-6">
-            <input type="text" name="name" placeholder="Nombre y apellido" />
+          <div class="row">
+            <div class="col-6">
+              <input type="text" name="name" placeholder="Nombre y apellido" />
 
-            <input type="text" name="user" placeholder="Nombre de usuario" />
+              <input type="text" name="user" placeholder="Nombre de usuario" />
 
-            <input type="email" name="email" placeholder="E-mail" />
+              <input type="email" name="email" placeholder="E-mail" />
+              <span class="feedback"></span>
 
-            <label for="borndate">Fecha de nacimiento</label>
-            <input type="date" name="borndate" id="borndate" max="2022-01-01" />
+              <label for="borndate">Fecha de nacimiento</label>
+              <input
+                type="date"
+                name="borndate"
+                id="borndate"
+                max="2022-01-01"
+              />
 
-            <input type="text" name="address" placeholder="Domicilio" />
-          </div>
+              <input type="text" name="address" placeholder="Domicilio" />
+            </div>
 
-          <div class="col-6">
-            <label for="perfil">Perfil de usuario</label>
-            <input type="radio" name="perfil" id="perfil" value="comprador" />
-            Comprador
-            <input type="radio" name="perfil" id="perfil" value="vendedor" />
-            Vendedor
+            <div class="col-6">
+              <label for="perfil">Perfil de usuario</label>
+              <div>
+                <input type="radio" name="perfil" value="comprador" />
+                Comprador
+              </div>
+              <div>
+                <input type="radio" name="perfil" value="vendedor" />
+                Vendedor
+              </div>
 
-            <label for="intereses">Intereses</label>
-            <input
-              type="checkbox"
-              name="intereses"
-              id="intereses"
-              value="electro"
-            />
-            Electro
-            <input
-              type="checkbox"
-              name="intereses"
-              id="intereses"
-              value="moda"
-            />
-            Moda
-            <input
-              type="checkbox"
-              name="intereses"
-              id="intereses"
-              value="hogar"
-            />
-            Hogar
-            <input
-              type="checkbox"
-              name="intereses"
-              id="intereses"
-              value="jugueteria"
-            />
-            Jugueteria
-            <input
-              type="checkbox"
-              name="intereses"
-              id="intereses"
-              value="vida sana"
-            />
-            Vida sana
+              <label for="intereses">Intereses</label>
+              <div>
+                <input type="checkbox" name="intereses" value="electro" />
+                Electro
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" value="moda" />
+                Moda
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" value="hogar" />
+                Hogar
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" value="jugueteria" />
+                Jugueteria
+              </div>
+              <div>
+                <input type="checkbox" name="intereses" value="vida sana" />
+                Vida sana
+              </div>
+              <label for="foto">Foto de usuario</label>
+              <div class="file-select">
+                <input type="file" name="foto" id="foto" accept=".jpg, .png" />
+              </div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Contraseña"
+              />
+              <input
+                type="password"
+                name="passwordConfirm"
+                id="passwordConfirm"
+                placeholder="Confirmar contraseña"
+              />
+            </div>
           </div>
           <div class="boton-crear">
-            <button type="submit">Crear cuenta</button>
+            <button type="submit"><a href="/">Crear cuenta</a></button>
           </div>
           <div class="boton-reset">
             <button type="reset">Borrar</button>
