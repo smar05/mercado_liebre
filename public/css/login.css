@@ -55,6 +55,7 @@ header .busqueda input {
   flex-grow: 2;
   margin-right: 0px;
   text-align: center;
+  height: 100%;
 }
 
 header .busqueda input:focus {
@@ -70,6 +71,7 @@ header .busqueda button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   width: 20px;
+  height: 100%;
 }
 
 header .mensaje {
@@ -219,6 +221,7 @@ footer .copyright {
 
 /*Media query tablets*/
 @media (min-width: 361px) {
+  /*Header*/
   /*Header*/
 
   header .logo {
